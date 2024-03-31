@@ -2,7 +2,6 @@ import moment from "moment";
 import { useFetch } from "../../hooks/useFetch";
 import "./Main.css";
 import blankImage from "../../images/blankImage.svg";
-import searchImage from "../../images/search.svg";
 
 function Card() {
   const CardLink = useFetch("https://bootcamp-api.codeit.kr/api/sample/folder");
@@ -41,6 +40,7 @@ function Card() {
 
   return (
     <div className="body">
+      <div className=""></div>
       <div className="cardContainer">
         {CardLink &&
           CardLink.folder.links.map((links) => (
